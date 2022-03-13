@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000;
+}
+h1{
+    width: 100%;
+    height: 5vh;
+    margin-top: 5vh;
+    font-family: arial;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90vh;
+}
+
+.calculadora{
+    width: 17.7rem;
+    height: 27rem;
+    padding: 2rem;
+    background: rgb(45, 46, 46);
+    
+}
+.alineacion{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.lista{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    padding-left: 5%;
+    font-family: arial;
+    font-size: 2rem;
+    color: #fff;
+}
+
+input{
+    width: 17rem;
+    height: 4rem;
+    font-family: arial;
+    font-size: 2rem;
+}
+
+button{
+    width: 4rem;
+    height: 4rem;
+    margin: 0.1rem;
+    padding: 0;
+    font-family: arial;
+    font-size: 2rem;
+
+}
+#ac{
+    width: 8.5rem;
+}
+#grande{
+    margin-left: 0.3rem;
+    position: absolute;
+    height: 8.2rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: column-reverse;
+}
