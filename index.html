@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora polaca</title>
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+
+
+    <div id="app">
+        <h1>
+            Calculadora polaca
+        </h1>
+        <div class="contenedor">
+            <div class="alineacion">
+            <div class="calculadora">
+                <input type="text" v-model="nuevo_dato" readonly>
+                <br>
+                <br>
+                <button @click="borrar" id="ac">AC</button>
+                <button @click="eliminar">C</button>
+                <button @click="dividir">/</button>
+                <br>    
+                <button @click="uno">1</button>
+                <button @click="dos">2</button>
+                <button @click="tres">3</button>
+                <button @click="multiplicar">*</button>
+                <br>
+                <button @click="cuatro">4</button>
+                <button @click="cinco">5</button>
+                <button @click="seis">6</button>
+                <button @click="restar">-</button>
+                <br>
+                <button @click="siete">7</button>
+                <button @click="ocho">8</button>
+                <button @click="nueve">9</button>
+                <button @click="sumar" id="grande">+</button>
+                <br>
+                <button @click="punto">.</button>
+                <button @click="cero">0</button>
+                <button @click="agregar">=</button>
+            </div>
+            </div>
+            <div class="lista">
+                <ul>
+                    <li v-for="pila of pila">
+                        {{pila}}
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="js/01.js">      
+    </script>
+</body>
+</html>
